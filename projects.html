@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: black;
+            color: #f5e8c7;
+            font-family: 'Amandine', serif;
+            text-align: center;
+            padding: 250;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .project-card {
+            width: 200px;
+            height: 500px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .curame {
+            background-color: #11111;
+	    border: 2px solid #D4AF37;
+        }
+        .bellymen {
+            background-color: #280000;
+	    border: 2px solid #deb3ac;
+        }
+        .greentea {
+            background-color: #badeba;
+	    border: 2px solid #002400;
+        }
+   	.somnum {
+            background-color: #000842;
+	    border: 2px solid #a5d7e8;
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+	    margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html"><img src="icon_1.png" alt="Home" class="home-icon"></a>
+    <h1>Projects</h1>
+    <div class="container">
+        <a href="curame.html" class="project-card curame">
+            <img src="curame.png" alt="Curame Hair Care" height="120">
+        </a>
+        <a href="tbs.html" class="project-card bellymen">
+            <img src="tbs.png" alt="The Bellymen Society" height="120">
+        </a>
+        <a href="greentea.html" class="project-card greentea">
+            <img src="greentea.png" alt="Green Tea" height="120">
+	</a>
+ 	<a href="somnum.html" class="project-card somnum">
+            <img src="somnum.png" alt="Somnum" height="120">
+	</a>
+        </div>
+    </div>
+</body>
+</html>
