@@ -3,66 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Myself</title>
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
-            color: #f5e9d6;
-            font-family: 'Amandine', serif;
+            color: white;
+            font-family: 'Satoshi', sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 50px;
         }
         .container {
-            max-width: 900px;
-            margin: auto;
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
             text-align: left;
+        }
+        h1 {
+            font-family: 'Boska', serif;
+            font-size: 48px;
+	    margin-bottom: 60px;
+            font-style: italic;
+            text-align: center;
+        }
+        .content {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .text-content {
+        .text {
             width: 60%;
-            font-size: 18px;
-            line-height: 1.6;
         }
-        .image-container {
-            width: 35%;
-        }
-        .image-container img {
-            width: 100%;
+        .profile-img {
+            width: 25%;
             border-radius: 15px;
-        }
-        h1 {
-            font-size: 36px;
-            text-align: center;
-        }
-        .italic {
-            font-style: italic;
         }
         .home-icon {
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 30px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #f5e8c7;
         }
     </style>
 </head>
 <body>
-
-    <a href="home.html"><img src="home_icon.png" alt="Home" class="home-icon"></a>
-
-    <h1>About <span class="italic">Myself</span></h1>
-
+    <a href="home.html"><img src="icon_1.png" alt="Home" class="home-icon"></a>
     <div class="container">
-        <div class="text-content">
-            <p>I am a Mechanical Engineering Graduate from NIT Warangal, India. My passion for design awoke in 2022 during my final year of undergrad. Since then, I have been learning multiple types of designs (UI/UX, Logos, Brand Identities, Packaging, Posters, etc.).</p>
-            <p>In Nov 2023, I quit my job as a consultant and started to learn and practice design as my full-time gig. From May 2024, I have been freelancing and have successfully delivered designs for multiple clients and have done a few passion projects, which you can check out in my work.</p>
-            <p>If you are reading this and are interested to work with me, hit me up on any of the given platforms, and we can take the discussion forward.</p>
-        </div>
-        <div class="image-container">
-            <img src="IMG_7467.png" alt="Srikar Pandrangi">
+        <h1>About <em>Myself</em></h1>
+        <div class="content">
+            <div class="text">
+                <p>I am a Mechanical Engineering graduate from NIT Warangal, India. My passion for design ignited in 2022 during my final year of undergrad. Since then, I have immersed myself in the world of design—exploring UI/UX, logos, brand identities, packaging, and more.</p>
+                <p>In November 2023, I took the leap, leaving my consulting job to pursue design full-time. Since May 2024, I have been freelancing, delivering successful projects for multiple clients while also bringing a few personal passion projects to life.</p>
+                <p>If you're here, chances are you're interested in my work! Feel free to check it out, and if you'd like to collaborate, hit me up on any of the listed platforms. Let's make something amazing together!</p>
+            </div>
+            <img src="profile.png" alt="Profile Picture" class="profile-img">
         </div>
     </div>
-
 </body>
 </html>
