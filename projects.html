@@ -10,56 +10,48 @@
     		 src: url('Boska-Variable.woff2') format('woff2');
 	}
         body {
-            background-color: black;
+            background-color: #111;
             color: #f5e8c7;
-            font-family: 'boska', serif;
             text-align: center;
-            padding: 250;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-family: 'boska', serif;
+            font-size: 36px;
+            margin-bottom: 30px;
         }
         .container {
-            max-width: 900px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .project-card {
-            width: 200px;
-            height: 200px;
+        .project-box {
+            background-color: #222;
             border-radius: 20px;
+            width: 150px;
+            height: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
             box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
         }
-        .curame {
-            background-color: #11111;
-        }
-        .bellymen {
-            background-color: #280000;
-        }
-        .greentea {
-            background-color: #badeba;
-        }
-   	.somnum {
-            background-color: #000842;
-        }
-	.revivo {
-            background-color: #000842;
-        }
-	.oolio {
-            background-color: #000842;
+        .project-box img {
+            width: 200px;
+            height: 200px;
         }
         .home-icon {
             position: absolute;
             top: 20px;
             left: 20px;
-            font-size: 18px;
-        }
-        h1 {
-            font-size: 36px;
-            text-align: center;
-	    margin-bottom: 60px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #f5e8c7;
         }
     </style>
 </head>
