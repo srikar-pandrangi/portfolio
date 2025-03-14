@@ -5,95 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
-	    @font-face {
-   		 font-family: 'boska';
-    		 src: url('Boska-Variable.woff2') format('woff2');
-	}
         body {
-            background-color: #111;
-            color: #f5e8c7;
+            background-color: black;
             text-align: center;
-            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            font-family: 'boska', serif;
-            font-size: 36px;
-            margin-bottom: 30px;
+            padding: 0;
+            color: #f5e8c7;
+            font-family: Boska, sans-serif;
+		font-size: 36px;
         }
         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 45px;
-            justify-content: center;
-            align-items: center;
-            max-width: 900px;
-            margin: 30px  ;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1200px;
+	    margin-top: -160px;
         }
-        .project-box {
-            background-color: #222;
+        .grid img {
+            width: 200px;
+            height: 200px;
             border-radius: 30px;
-            width: 200px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            object-fit: cover;
         }
-        .project-box img {
-            width: 200px;
-            height: 200px;
-        }
-	.curame {
-            background-color: #11111;
-        }
-        .bellymen {
-            background-color: #280000;
-        }
-        .greentea {
-            background-color: #badeba;
-        }
-   	.somnum {
-            background-color: #000842;
-        }
-   	.revivo {
-            background-color: #f2f2f2;
-        }
-   	.oolio {
-            background-color: #ffefcd;
+        h1 {
+            font-size: 48px;
+            text-align: center;
+	    margin-bottom: 30px;
         }
         .home-icon {
             position: absolute;
             top: 20px;
-            left: 20px;
-            font-size: 24px;
-            text-decoration: none;
-            color: #f5e8c7;
+            left:20px;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <a href="home.html"><img src="icon_1.png" alt="Home" class="home-icon"></a>
     <h1>Projects</h1>
     <div class="container">
-        <a href="curame.html" class="project-card curame">
-            <img src="curame.png" alt="Curame Hair Care" height="200">
+    	<a href="index.html"><img src="icon_1.png" alt="Home" class="home-icon"></a>
+
+        <div class="grid">
+	<a href="curame.html">
+            <img src="curame.png" alt="Curame Hair Care" >
         </a>
-        <a href="tbs.html" class="project-card bellymen">
-            <img src="tbs.png" alt="The Bellymen Society" height="200">
+        <a href="tbs.html">          
+	<img src="tbs.png" alt="The Bellymen Society" ">
         </a>
-        <a href="greentea.html" class="project-card greentea">
-            <img src="greentea.png" alt="Green Tea" height="200">
+        <a href="greentea.html" >
+            <img src="greentea.png" alt="Green Tea">
 	</a>
- 	<a href="somnum.html" class="project-card somnum">
-            <img src="somnum.png" alt="Somnum" height="200">
+ 	<a href="somnum.html" >
+            <img src="somnum.png" alt="Somnum">
 	</a>
-	<a href="revivo.html" class="project-card revivo">
-            <img src="revivo.png" alt="revivo" height="200">
+ 	<a href="revivo.html">
+            <img src="revivo.png" alt="revivo">
 	</a>
-	    <a href="oolio.html" class="project-card oolio">
-            <img src="oolio.png" alt="oolio" height="200">
+ 	<a href="oolio.html" >
+            <img src="oolio.png" alt="oolio">
 	</a>
         </div>
     </div>
