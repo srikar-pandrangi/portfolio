@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somnum</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .somnum-image {
+            width: 90%;
+            max-width: 1800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #f5e8c7;
+        }
+        .scroll-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .scroll-top img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="projects.html"><img src="left-arrow.png" alt="Home" class="home-icon"></a>
+    <div class="container">
+        <img src="somnum-full.png" alt="Somnum Smart Mttresses" class="somnum-image">
+    </div>
+    <button class="scroll-top" onclick="scrollToTop()">
+        <img src="arrow-icon.png" alt="Scroll to Top">
+    </button>
+    <script>
+        window.onscroll = function() {
+            let scrollButton = document.querySelector(".scroll-top");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
