@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <style>
-	    	@font-face {
-    		font-family: 'boska';
-    		src: url('Boska-Variable.woff2') format('woff2');
-	}
-        body {
-            background-color: black;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            color: #f5f5f5;
-            font-family: boska, sans-serif;
-		font-size: 36px;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-	    justify-content: center;
-            gap: 40px;
-            padding: 40px;
-            max-width: 1200px;
-	    margin-top: -160px;
-        }
-        .grid img {
-            width: 200px;
-            height: 200px;
-            border-radius: 30px;
-            object-fit: cover;
-        }
-        h1 {
-            font-size: 48px;
-            text-align: center;
-	    margin-bottom: 30px;
-        }
-        .home-icon {
-            position: absolute;
-            top: 20px;
-            left:20px;
-            font-size: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Satoshi, sans-serif;
+      background-color: #111111;
+      color: white;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0px 12px;
+    }
+
+    .title {
+      text-align: center;
+      font-family: Boska, sans-serif;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 12px;
+    }
+
+    .project-card {
+      padding: 8px;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 4px;
+    }
+
+    .project-card h2 {
+      font-size: 18px;
+      margin: 0 0 4px;
+    }
+
+    .project-card p {
+      font-size: 12px;
+      color: #EEEEEE;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <div class="container">
-    	<a href="index.html"><img src="icon_1.png" alt="Home" class="home-icon"></a>
+  <div class="container">
+    <h1 class="title">Projects</h1>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <img src="curame.png" alt="Curame Hair Care">
+        <h2>Curame Hair Care</h2>
+        <p>Visual Identity</p>
+      </div>
 
-        <div class="grid">
-	<a href="curame.html">
-            <img src="curame.png" alt="Curame Hair Care" >
-        </a>
-        <a href="tbs.html">          
-	<img src="tbs.png" alt="The Bellymen Society" ">
-        </a>
-        <a href="greentea.html" >
-            <img src="greentea.png" alt="Green Tea">
-	</a>
- 	<a href="somnum.html" >
-            <img src="somnum.png" alt="Somnum">
-	</a>
- 	<a href="revivo.html">
-            <img src="revivo.png" alt="revivo">
-	</a>
-        </div>
+      <div class="project-card">
+        <img src="tbs.png" alt="The Bellymen Society">
+        <h2>The Bellymen Society</h2>
+        <p>Logo design</p>
+      </div>
+
+      <div class="project-card">
+        <img src="somnum.png" alt="Somnum Smart Mattress">
+        <h2>Somnum Smart Mattress</h2>
+        <p>Logo design</p>
+      </div>
+
+      <div class="project-card">
+        <img src="greentea.png" alt="Greentea">
+        <h2>Greentea</h2>
+        <p>Visual Identity</p>
+      </div>
+
+      <div class="project-card">
+        <img src="revivo.png" alt="Revivo Energy Drink">
+        <h2>Revivo Energy Drink</h2>
+        <p>Visual Identity</p>
+      </div>
+
     </div>
+  </div>
 </body>
 </html>
